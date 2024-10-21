@@ -120,8 +120,8 @@ def get_videos(items):
         thumbnail_link = snippet.get("thumbnails", {}).get("default", {}).get("url", "")
         trending_date = time.strftime("%y.%d.%m")
         tags = get_tags(snippet.get("tags", ["[none]"]))
-        duration = contentDetails.get("duration", "")
-        definition = contentDetails.get("definition", "")
+        # duration = contentDetails.get("duration", "")
+        # definition = contentDetails.get("definition", "")
         hasPPPlacement = paidPPDetails.get("hasPaidProductPlacement")
         view_count = statistics.get("viewCount", 0)
 
